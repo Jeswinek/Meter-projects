@@ -501,13 +501,13 @@ class _energyState extends State<energy> {
                                     style: TextStyle(fontSize: 17),
                                   ),
                                   onPressed: () {
-                                    // Navigator.push(
-                                    //   context,
-                                    //   MaterialPageRoute(
-                                    //       builder: (context) =>
-                                    //           //MyHome()
-                                    //   ),
-                                    // );
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                          builder: (context) =>
+                                              MyHome()
+                                      ),
+                                    );
                                   },
                                 )
                             ),

@@ -18,6 +18,7 @@ import 'package:flutter_app_lern/signuppage.dart';
 import 'package:flutter/services.dart';
 import 'curve.dart';
 import 'baseHome.dart';
+import 'automation.dart';
 import 'graph.dart';
 import 'dart:async';
 import 'dart:convert';
@@ -25,6 +26,7 @@ import 'Home.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'calendar.dart';
+import 'timer.dart';
 import 'package:flutter_app_lern/newgraph.dart';
 import 'package:flutter_app_lern/bargraph.dart';
 
@@ -58,7 +60,11 @@ class MyApp extends StatelessWidget {
                 //DatePickerDemo()
                 // MyHome()
                 // MyHomer()
-                energy()
+               // energy()
+               // Home()
+               // Homescreen()
+                //automation()
+                timer()
                 //CurvedShape(),
                 //HomePage(),
 
@@ -77,7 +83,7 @@ class MyApp extends StatelessWidget {
           HomeScreen.routeName: (ctx)=> HomeScreen(),
           Homescreen.routeName: (ctx)=> Homescreen(),
           energy.routeName: (ctx)=> energy(),
-          //MyHome.routeName: (ctx)=> MyHome(),
+          MyHome.routeName: (ctx)=> MyHome(),
           MyHomer.routeName: (ctx)=> MyHomer(),
 
         },
