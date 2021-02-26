@@ -15,6 +15,8 @@ class _timerState extends State<timer> {
   var textHolder = 'Timer is OFF';
   String Switchh='';
   String stateText;
+  var settime;
+  var time;
 
   void toggleSwitch(bool value) {
     if (switchControl == false) {
@@ -208,8 +210,17 @@ class _timerState extends State<timer> {
         onConfirm: (Picker picker, List value) {
           print(value.toString());
           print(picker.getSelectedValues());
+          time = picker.getSelectedValues();
+          print(time[0]);
+          settime = (time[0]*60)+time[1];
+          print(settime);
+          final ref=fb.reference().child("plugTimer");
+          {
+            ref.child("Plug1").set(settime);
+          }
         }
     ).showDialog(context);
+
   }
 
 }

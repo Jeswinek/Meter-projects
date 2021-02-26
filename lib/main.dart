@@ -64,13 +64,13 @@ class MyApp extends StatelessWidget {
                // Home()
                // Homescreen()
                 //automation()
-                timer()
+                //timer()
                 //CurvedShape(),
                 //HomePage(),
 
                 // Register(),
                 //Calendar()
-                //Switches()
+                Switches()
               ]
               ),
             ),
